@@ -9,12 +9,9 @@ public class Task2 {
         int a = sс.nextInt();
         int b = sс.nextInt();
 
-        for(int i = a; i <= b; i ++){
-            if (i%10 == 0) {
-                System.out.print(" ");
-            } else if (i%5 == 0) {
-                System.out.print(i);
-            }
+        for (int i = a + 1; i < b; i ++){
+            if (i % 5 == 0 && i % 10 != 0)
+                System.out.print(i + " ");
         }
     }
 }
