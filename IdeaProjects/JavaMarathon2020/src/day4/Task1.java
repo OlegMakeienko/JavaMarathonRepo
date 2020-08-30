@@ -22,7 +22,7 @@ public class Task1 {
 
             int number8 = 0;
             for (int i = 0; i < randomNumbers.length; i++) {
-                if (randomNumbers[i] > 8) ;
+                if (randomNumbers[i] > 8)
                 number8 ++;
             }
 
@@ -31,7 +31,7 @@ public class Task1 {
 
         int number1 = 0;
         for (int i = 0; i < randomNumbers.length; i++) {
-            if (randomNumbers[i] == 1) ;
+            if (randomNumbers[i] == 1)
             number1++;
         }
 
@@ -40,7 +40,7 @@ public class Task1 {
 
         int even = 0;
         for (int i = 0; i < randomNumbers.length; i++) {
-            if (randomNumbers[i] % 2 == 0) ;
+            if (randomNumbers[i] % 2 == 0)
             even ++;
         }
 
@@ -49,7 +49,7 @@ public class Task1 {
 
         int odd = 0;
         for (int i = 0; i < randomNumbers.length; i++) {
-            if (randomNumbers[i] % 2 != 0) ;
+            if (randomNumbers[i] % 2 != 0)
             odd ++;
         }
 
