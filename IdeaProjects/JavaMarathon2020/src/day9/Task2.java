@@ -5,20 +5,33 @@ public class Task2 {
     Rectangle rectangle = new Rectangle(10,46, "red");
     rectangle.info();
 
-    Circle circle = new Circle(6);
+    Circle circle = new Circle(6, "Red");
     circle.info();
 
-    Triangle triangle = new Triangle(3,4,5);
+    Triangle triangle = new Triangle(3,4,5,"Blue");
     triangle.info();
 
     }
 }
 
 abstract class Figure {
+    private String color;
+
+
     public abstract double perimeter();
     public abstract double area();
     public void info() {
-        System.out.println(perimeter() + " , " + area());
+        System.out.println(perimeter() + " , " + area() + " , " + getColor());
+    }
+
+    public Figure(String color) {
+        this.color = color;
+    }
+    public String getColor() {
+        return color;
+    }
+    public void setColor(String color) {
+        this.color = color;
     }
 }
 
@@ -28,6 +41,7 @@ class Rectangle extends Figure{
 
 
     Rectangle(double width, double height, String color) {
+        super(color);
         this.width = width;
         this.height = height;
     }
@@ -47,7 +61,8 @@ class Circle extends Figure{
     final double P = 3.14;
 
 
-    Circle (double radius) {
+    Circle (double radius, String color) {
+        super(color);
 
         this.radius = radius;
     }
@@ -69,7 +84,8 @@ class Triangle extends Figure {
     private double sideC;
 
 
-    Triangle(double sideA, double sideB, double sideC) {
+    Triangle(double sideA, double sideB, double sideC, String color) {
+        super(color);
 
         this.sideA = sideA;
         this.sideB = sideB;

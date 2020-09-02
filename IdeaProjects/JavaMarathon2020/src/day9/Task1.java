@@ -7,9 +7,11 @@ public class Task1 {
 
         Student student = new Student("Oleg", "Java");
         student.printInfo();
+        System.out.println(student.getStudyGroup());
 
         Teacher teacher = new Teacher("Sergei", "Teacher of Java");
         teacher.printInfo();
+        System.out.println(teacher.getSubject());
     }
 }
 
