@@ -17,7 +17,7 @@ public class Task1 {
         System.out.println(cars);
 
         cars.add("Mercedes");
-        cars.remove("Kia");
+        cars.remove(0);
 
         System.out.println(cars);
     }
