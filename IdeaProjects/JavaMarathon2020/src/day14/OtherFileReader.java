@@ -20,7 +20,7 @@ public class OtherFileReader {
         Scanner s = new Scanner(file);
         String line = s.nextLine();
         String[] numbersString = line.split(" ");
-        int [] numbers = new int[10];
+        int [] numbers = new int[numbersString.length];
         int counter = 0;
         int sum = 0;
 
@@ -34,6 +34,7 @@ public class OtherFileReader {
             System.out.println(Arrays.toString(numbers));
                 System.out.println(sum);
             }
+
 
         catch (FileNotFoundException e){
             System.out.println("Файл не найден " + e);

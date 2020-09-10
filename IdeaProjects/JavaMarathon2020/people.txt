@@ -1,0 +1,4 @@
+Maria 45
+Anders 78
+Mika 43
+Anne 33
