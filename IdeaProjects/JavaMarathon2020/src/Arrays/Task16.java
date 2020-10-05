@@ -16,4 +16,17 @@ public class Task16 {
         System.out.println(Arrays.toString(array));
 
     }
+//                                                  Второе решение этой задачи
+
+
+//    public static void main(String[] args) {
+//        byte[] array = {0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1};
+//        System.out.println(Arrays.toString(sort(array)));
+//    }
+//
+//    public static byte[] sort(byte[] array) {
+//        Arrays.sort(array);
+//        return array;
+//    }
+
 }
