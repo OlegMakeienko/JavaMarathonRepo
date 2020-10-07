@@ -7,7 +7,7 @@ import java.util.Scanner;
 /*
 Задается массив. Узнать, какие элементы встречаются в массиве больше одного раза.
  */
-public class Task8 {
+public class NoTask8 {
     public static void main(String[] args) {
         int [] array;
         Scanner scanner = new Scanner(System.in);

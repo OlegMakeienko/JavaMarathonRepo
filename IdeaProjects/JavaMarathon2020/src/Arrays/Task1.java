@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class Task1 {
     public static void main(String[] args) {
-        int [] a = {1,4,7,0,5,8,34,0,6,5,54,45,345};
+        int [] a = {1,4,7,10,5,8,34,0,6,5,54,45,345};
         for ( int i=0; i<a.length; i++){
             if (a[i] == 0) {
                 a[i] = 1;
