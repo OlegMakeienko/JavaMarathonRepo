@@ -1,4 +1,4 @@
-package TwoDimArray;
+package TwoDimArray;  // НЕ ЗАКОНЧЕНА
 
 import java.util.Arrays;
 import java.util.Random;
@@ -31,14 +31,23 @@ public class Task1 {
                 magicSquare[i][j]=r.nextInt(10);
             }
         }
+        int sum = 0;
 
         for (int[] ints : magicSquare) {
             for (int j = 0; j < magicSquare[0].length; j++) {
             }
-            System.out.println(Arrays.toString(ints));
+                System.out.println(Arrays.toString(ints));
         }
                 System.out.println();
 
+
+            for (int j = 0; j < magicSquare[0].length; j++) {
+                sum += magicSquare[1][j];                       // тут находим сумму елементов в строке
+
+
+        }
+        System.out.println(sum);
+
+
     }
 }
-
