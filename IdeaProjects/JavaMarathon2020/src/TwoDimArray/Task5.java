@@ -23,7 +23,7 @@ public class Task5 {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
-                array[i][j] = r.nextInt(99) + 1;
+                array[i][j] = r.nextInt(3);
             }
         }
 
@@ -35,5 +35,25 @@ public class Task5 {
             }
             System.out.println();
         }
+
+        System.out.println("Enter first arrays number 'k' 'l' :");
+        int k = sc.nextInt();
+        int l = sc.nextInt();
+
+        System.out.println("Enter first arrays number 'm' 'n' :");
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+
+        int sum = 0;
+
+        for (int i = k; i <= m; i++) {
+            for (int j = l; j < array[i].length; j++) {
+                sum += array[i][j];
+                if(array[i][j]>array[i][n])
+                    break;
+                }
+            }
+        System.out.println(sum);
+
     }
 }
