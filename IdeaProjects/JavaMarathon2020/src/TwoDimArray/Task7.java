@@ -9,14 +9,13 @@ import java.util.Scanner;
 
 public class Task7 {
     public static void main(String[] args) {
-        int x, y;
+        int x;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter square size x & y :");
+        System.out.println("Enter square size x :");
 
         x = sc.nextInt();
-        y = sc.nextInt();
-        int[][] array = new int[x][y];
+        int[][] array = new int[x][x];
 
         Random r = new Random();
 
