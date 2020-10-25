@@ -34,5 +34,18 @@ public class Task7 {
             }
             System.out.println();
         }
+
+        int counter = 0;
+        int sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j <= i; j++) {
+                if (array[j][i]%2==0)           // элементы над диагональю, включая диагональ. чтоб
+                                                // исключить диагональ, цикл начинать с 1
+                    counter++;
+                    sum += array[j][i];
+            }
+        }
+            System.out.println(counter + " " + sum);
     }
 }
