@@ -23,7 +23,7 @@ public class Task12 {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
-                array[i][j] = r.nextInt(3);
+                array[i][j] = r.nextInt(99)+1;
             }
         }
 
@@ -34,6 +34,36 @@ public class Task12 {
                         [i][j] + " ");
             }
             System.out.println();
+        }
+
+        int [] maxSum = new int[array.length];
+        for (int i = 0; i<array.length; i++) {
+        int sum = 0;
+            for (int j = 0; j < array.length; j++) {
+                sum += array[i][j];
+                maxSum[i] = sum;
+            }
+        }
+
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(maxSum[i] + " ");
+            max = Math.max(max, maxSum[i]);
+            min = Math.min(min,maxSum[i]);
+        }
+
+        for (int i = 0; i<array.length; i++) {
+            int sum = 0;
+            for (int j = 0; j < array.length; j++) {
+                sum += array[i][j];
+                if (sum == max) {
+                    System.out.println("\nMax sum is: " + max + " in line #" + (i + 1));
+                }
+                if (sum == min) {
+                    System.out.println("\nMin sum is: " + min + " in line #" + (i + 1));
+                }
+            }
         }
     }
 }
